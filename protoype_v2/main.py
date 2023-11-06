@@ -1,7 +1,8 @@
 import account_page as ap
 import favorites_page as fp
-import home_page
+import home_page as hp
 import login
+import progress_page as pp
 
 if __name__ == "__main__":
     user_id = login.login()
@@ -13,10 +14,10 @@ if __name__ == "__main__":
 
             #Home Page
             if page == 6:
-                pass
+                page = hp.HomePage(user_id).main_page()
             #Progress Page
             elif page == 7:
-                pass
+                page = pp.main(user_id)
             #Favorites
             elif page == 8:
                 page = fp.list_favorite_meals(user_id)

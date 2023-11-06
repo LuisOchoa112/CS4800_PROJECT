@@ -55,15 +55,15 @@ def main(user_id):
     # Plot weight progress chart
     plot_weight_progress(user_id)
 
-if __name__ == "__main__":
-    user_id = input("Enter your user ID: ")
+# if __name__ == "__main__":
+#     user_id = input("Enter your user ID: ")
 
-    try:
-        user_id = int(user_id)
-    except ValueError:
-        print("Invalid user ID. Please enter a valid user ID.")
-    else:
-        main(user_id)
+#     try:
+#         user_id = int(user_id)
+#     except ValueError:
+#         print("Invalid user ID. Please enter a valid user ID.")
+#     else:
+#         main(user_id)
 
 
 #A function that ask the user if they want to switch tabs ie Progress, Account, Favorite or sign out/quit application
